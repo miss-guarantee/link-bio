@@ -1,0 +1,152 @@
+        /* ตั้งค่าโทนสีสว่าง คลีนๆ สวยงาม */
+        :root {
+            --bg-color: #fdfaf6; /* สีพีช/ครีมอ่อนๆ สบายตา */
+            --text-main: #333333;
+            --text-sub: #777777;
+            --btn-bg: #ffffff;
+            --btn-border: #eaeaea;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Kanit', sans-serif;
+            background: linear-gradient(135deg, #fdfaf6 0%, #f4effc 100%); /* ไล่สีพาสเทลอ่อนๆ ดึงดูดผู้หญิง */
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* กล่องคอนเทนเนอร์หลัก */
+        .bio-container {
+            width: 100%;
+            max-width: 420px; 
+            text-align: center;
+            background: rgba(255, 255, 255, 0.6);
+            padding: 40px 20px;
+            border-radius: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+            backdrop-filter: blur(10px); /* เอฟเฟกต์กระจกเบลอๆ สวยๆ */
+        }
+
+        /* รูปโลโก้ */
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1px solid #ffffff;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+            margin-bottom: 15px;
+            background-color: #fff;
+        }
+
+        /* ชื่อร้าน */
+        .profile-name {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 0 0 5px 0;
+            color: #2c2c2c;
+        }
+
+        .profile-bio {
+            font-size: 1rem;
+            color: var(--text-sub);
+            margin-bottom: 25px;
+            font-weight: 300;
+        }
+
+        /* กล่องรวมลิงก์ */
+        .links-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        /* -------------------------------------
+           สไตล์ปุ่ม LINE แบบพิเศษ (ตามรูปของลูกค้าเป๊ะๆ) 
+           ------------------------------------- */
+        .custom-line-btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* กระจายซ้าย กลาง ขวา */
+            background-color: #f1f4e5; /* สีพื้นหลังเขียวอมครีมตามรูป */
+            border: 1px solid #4a4a4a; /* ขอบสีเข้มบางๆ */
+            border-radius: 12px; /* ขอบมนนิดๆ ตามรูป */
+            padding: 8px 15px;
+            text-decoration: none;
+            color: var(--text-main);
+            transition: transform 0.2s ease;
+        }
+
+        .custom-line-btn:hover {
+            transform: scale(1.02);
+            box-shadow: 0 5px 15px rgba(0, 195, 0, 0.15);
+        }
+
+        .line-circle {
+            background-color: #06C755;
+            color: white;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        .line-text {
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .line-dots {
+            color: #666;
+            font-size: 1.2rem;
+            padding-right: 5px;
+        }
+
+        .link-btn {
+            display: flex;
+            align-items: center;
+            background-color: var(--btn-bg);
+            color: var(--text-main);
+            text-decoration: none;
+            padding: 16px 20px;
+            border-radius: 30px;
+            border: 1px solid var(--btn-border);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .link-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.05);
+            border-color: #d1d1d1;
+        }
+
+        .link-btn i {
+            font-size: 1.5rem;
+            position: absolute;
+            left: 20px;
+        }
+
+        .link-btn span {
+            width: 100%;
+            text-align: center;
+            font-weight: 500;
+            font-size: 1.05rem;
+        }
+
+        .fa-facebook { color: #1877F2; }
+        .fa-instagram { 
+            background: -webkit-linear-gradient(#f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .fa-bag-shopping { color: #EE4D2D; } /* สีส้ม Shopee */
